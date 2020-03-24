@@ -1,0 +1,21 @@
+{
+    "name": "COM4D",
+    "id": 20000,
+    "commands": [
+        {
+            "theme": "COM",
+            "syntax": "COM Setup(&L):J",
+            "threadSafe": true
+        },
+        {
+            "theme": "COM",
+            "syntax": "COM Write(&C):J",
+            "threadSafe": true
+        },
+        {
+            "theme": "COM",
+            "syntax": "COM Read:J",
+            "threadSafe": true
+        }
+    ]
+}
