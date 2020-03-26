@@ -1,4 +1,6 @@
 //%attributes = {}
+$status:=COM Read 
+
 $status:=COM Setup (com get status)
 
 If (Not:C34($status.isRegistered))
@@ -6,7 +8,7 @@ If (Not:C34($status.isRegistered))
 End if 
 
 C_COLLECTION:C1488($params)
-$params:=New collection:C1472("Hello!";Current date:C33;Pi:K30:1;True:C214;Null:C1517;Current time:C178;MAXLONG:K35:2)
+$params:=New collection:C1472("Hello!";"World?")
 
 $status:=COM Write ($params)
 If ($status.success)
