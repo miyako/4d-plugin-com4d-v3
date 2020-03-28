@@ -678,6 +678,8 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 
 		Json::Value root = Json::Value(Json::arrayValue);
 
+        Json::ArrayIndex pos = pDispParams->cArgs;
+        
 		for (Json::ArrayIndex i = 0; i < pDispParams->cArgs; ++i) {
 		
 			VARTYPE type = pDispParams->rgvarg[i].vt;
@@ -690,7 +692,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				param["type"] = "VT_EMPTY";
 				param["value"] = Json::Value(Json::nullValue);
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -700,7 +702,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				param["type"] = "VT_NULL";
 				param["value"] = Json::Value(Json::nullValue);
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -712,7 +714,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				conv(pDispParams->rgvarg[i].bstrVal, value);
 				param["value"] = value;
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -722,7 +724,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				param["type"] = "VT_BOOL";
 				param["value"] = pDispParams->rgvarg[i].boolVal;
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -732,7 +734,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				param["type"] = "VT_UI1";
 				param["value"] = pDispParams->rgvarg[i].bVal;
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -742,7 +744,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				param["type"] = "VT_I1";
 				param["value"] = pDispParams->rgvarg[i].cVal;
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -752,7 +754,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				param["type"] = "VT_UI2";
 				param["value"] = pDispParams->rgvarg[i].uiVal;
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -762,7 +764,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				param["type"] = "VT_I2";
 				param["value"] = pDispParams->rgvarg[i].iVal;
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -772,7 +774,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				param["type"] = "VT_I4";
 				param["value"] = pDispParams->rgvarg[i].lVal;
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -782,7 +784,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				param["type"] = "VT_UINT";
 				param["value"] = pDispParams->rgvarg[i].uintVal;
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -792,7 +794,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				param["type"] = "VT_INT";
 				param["value"] = pDispParams->rgvarg[i].intVal;
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -802,7 +804,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				param["type"] = "VT_R4";
 				param["value"] = pDispParams->rgvarg[i].fltVal;
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -812,7 +814,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				param["type"] = "VT_R8";
 				param["value"] = pDispParams->rgvarg[i].dblVal;
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -822,7 +824,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 				param["type"] = "VT_ERROR";
 				param["value"] = pDispParams->rgvarg[i].scode;
 
-				root[i] = param;
+				root[pos] = param;
 			}
 			break;
 
@@ -847,7 +849,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 					std::string value = formatted_date_time.str();
 					param["value"] = value.c_str();
 
-					root[i] = param;
+					root[pos] = param;
 				}
 
 			}
@@ -861,6 +863,9 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 			default:
 				break;
 			}
+		
+			pos--;
+		
 		}
 
 		if (addNodeToJsonFileMap(root)) {
@@ -1270,6 +1275,8 @@ void COM_Write(PA_PluginParameters params) {
 					std::vector<VARIANT>args(len);
 					VARIANT   varResult;
 					std::vector<BSTR>strs;
+                    
+                    PA_long32 pos = len - 1;
 
 					for (PA_long32 i = 0; i < len; ++i) {
 
@@ -1281,54 +1288,55 @@ void COM_Write(PA_PluginParameters params) {
 						short dd, mm, yyyy;
 						SYSTEMTIME time;
 
-						VariantInit(&args[i]);
+						VariantInit(&args[pos]);
 
-						args[i].vt = VT_EMPTY;
+						args[pos].vt = VT_EMPTY;
 
 						switch (kind)
 						{
 						case eVK_Null:
 						case -1:
-							args[i].vt = VT_NULL;
+							args[pos].vt = VT_NULL;
 							break;
 						case eVK_Unistring:
 						case eVK_Text:
-							args[i].vt = VT_BSTR;
+							args[pos].vt = VT_BSTR;
 							u = PA_GetStringVariable(v);
 							str = SysAllocString((const OLECHAR *)PA_GetUnistring(&u));
 							strs.push_back(str);
-							args[i].bstrVal = str;
+							args[pos].bstrVal = str;
 							break;
 						case eVK_Boolean:
-							args[i].vt = VT_BOOL;
-							args[i].boolVal = static_cast<VARIANT_BOOL>(PA_GetBooleanVariable(v));
+							args[pos].vt = VT_BOOL;
+							args[pos].boolVal = static_cast<VARIANT_BOOL>(PA_GetBooleanVariable(v));
 							break;
 						case eVK_Date:
 							PA_GetDateVariable(v, &dd, &mm, &yyyy);
-							args[i].vt = VT_DATE;
+							args[pos].vt = VT_DATE;
 							ZeroMemory(&time, sizeof(time));
 							time.wYear = static_cast<DWORD>(yyyy);
 							time.wMonth = static_cast<DWORD>(mm);
 							time.wDay = static_cast<DWORD>(dd);
-							SystemTimeToVariantTime(&time, &args[i].date);
+							SystemTimeToVariantTime(&time, &args[pos].date);
 							break;
 						case eVK_Integer:
 						case eVK_Longint:
-							args[i].vt = VT_I4;
-							args[i].lVal = static_cast<LONG>(PA_GetLongintVariable(v));
+							args[pos].vt = VT_I4;
+							args[pos].lVal = static_cast<LONG>(PA_GetLongintVariable(v));
 							break;
 						case eVK_Real:
-							args[i].vt = VT_R8;
-							args[i].dblVal = static_cast<DOUBLE>(PA_GetRealVariable(v));
+							args[pos].vt = VT_R8;
+							args[pos].dblVal = static_cast<DOUBLE>(PA_GetRealVariable(v));
 							break;
 						case eVK_Time:
-							args[i].vt = VT_I4;
-							args[i].lVal = static_cast<LONG>(PA_GetTimeVariable(v));
+							args[pos].vt = VT_I4;
+							args[pos].lVal = static_cast<LONG>(PA_GetTimeVariable(v));
 							break;
 						default:
 							break;
 						}
 
+						pos--;
 					}
 
 					VariantInit(&varResult);

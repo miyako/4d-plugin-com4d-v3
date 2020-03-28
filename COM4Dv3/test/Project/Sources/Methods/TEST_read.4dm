@@ -1,4 +1,4 @@
 //%attributes = {}
-$status:=COM Register interface 
+$status:=COM Read 
 
   //$status:=COM Unregister interface 
