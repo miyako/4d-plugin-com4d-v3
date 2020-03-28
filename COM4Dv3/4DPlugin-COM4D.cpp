@@ -678,10 +678,8 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 
 		Json::Value root = Json::Value(Json::arrayValue);
 
-        for (Json::ArrayIndex i = pDispParams->cArgs ; i > 0; --i) {
+		for (Json::ArrayIndex i = 0; i < pDispParams->cArgs; ++i) {
 		
-			i--;
-
 			VARTYPE type = pDispParams->rgvarg[i].vt;
 
 			switch (type)
@@ -863,8 +861,6 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 			default:
 				break;
 			}
-		
-			i++;
 		}
 
 		if (addNodeToJsonFileMap(root)) {
@@ -1275,9 +1271,7 @@ void COM_Write(PA_PluginParameters params) {
 					VARIANT   varResult;
 					std::vector<BSTR>strs;
 
-					for (PA_long32 i = len; i > 0; --i) {
-
-						i--;
+					for (PA_long32 i = 0; i < len; ++i) {
 
 						PA_Variable v = PA_GetCollectionElement(values, i);
 
@@ -1335,7 +1329,6 @@ void COM_Write(PA_PluginParameters params) {
 							break;
 						}
 
-						i++;
 					}
 
 					VariantInit(&varResult);

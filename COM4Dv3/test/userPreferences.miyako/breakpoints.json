@@ -14,14 +14,7 @@
 		}
 	},
 	{
-		"line": 14,
-		"method": {
-			"type": 1,
-			"methodName": "TEST"
-		}
-	},
-	{
-		"line": 2,
+		"line": 12,
 		"method": {
 			"type": 1,
 			"methodName": "TEST"
