@@ -1188,7 +1188,7 @@ void COM_Read(PA_PluginParameters params) {
 												Json::Value __value = _value["value"];
 												if ((__value) && __value.isBool()) {
 													bool ___value = __value.asBool();
-													ob_set_b(value, type.c_str(), ___value);
+													ob_set_b(value, L"VT_BOOL", ___value);
 													is_value_valid = true;
 												}
 											}
