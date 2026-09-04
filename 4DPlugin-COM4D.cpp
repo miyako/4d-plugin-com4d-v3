@@ -29,6 +29,7 @@ const CLSID CLSID_COM4Dv3 =
 #define AppID_COM4Dv3 CLSID_COM4Dv3
 
 #define PAGE_MAXSIZE_LOW 0x1000000
+#define JSON_MAXSIZE (PAGE_MAXSIZE_LOW - sizeof(DWORD)) /* payload must fit after the leading size DWORD */
 
 class CCOM4Dv2Factory : public IClassFactory
 {
@@ -262,6 +263,9 @@ void print_debug_message() {
 		(LPTSTR)&lpMsgBuf,
 		0, NULL);
 	OutputDebugStringW((const wchar_t *)lpMsgBuf);
+	if (lpMsgBuf) {
+		LocalFree(lpMsgBuf);
+	}
 }
 
 BOOL takeNodeFromJsonFileMap(std::string *json) {
@@ -284,9 +288,9 @@ BOOL takeNodeFromJsonFileMap(std::string *json) {
 					CopyMemory(&json_size, p, sizeof(DWORD));
 					p += sizeof(DWORD);
 
-					std::vector<unsigned char>bytes(json_size);
+					if (json_size && json_size <= JSON_MAXSIZE) {
 
-					if (json_size) {
+						std::vector<unsigned char>bytes(json_size);
 
 						CopyMemory(&bytes[0], p, json_size);
 						*json = std::string((const char *)&bytes[0], json_size);
@@ -365,9 +369,9 @@ BOOL addNodeToJsonFileMap(Json::Value node) {
 					CopyMemory(&json_size, p, sizeof(DWORD));
 					p += sizeof(DWORD);
 
-					std::vector<unsigned char>bytes(json_size);
+					if (json_size && json_size <= JSON_MAXSIZE) {
 
-					if (json_size) {
+						std::vector<unsigned char>bytes(json_size);
 
 						CopyMemory(&bytes[0], p, json_size);
 						json = std::string((const char *)&bytes[0], json_size);
@@ -411,38 +415,42 @@ BOOL addNodeToJsonFileMap(Json::Value node) {
 			}
 
 			Json::ArrayIndex i = root.size();
-			i++;
 			root[i] = node;
 
 			Json::StreamWriterBuilder builder;
 			json = Json::writeString(builder, root);
 
-			buf = MapViewOfFile(hMap, FILE_MAP_WRITE, 0, 0, 0);
+			if (json.size() <= JSON_MAXSIZE) {
 
-			if (buf)
-			{
-				try
+				buf = MapViewOfFile(hMap, FILE_MAP_WRITE, 0, 0, 0);
+
+				if (buf)
 				{
-					unsigned char *p = (unsigned char *)buf;
+					try
+					{
+						unsigned char *p = (unsigned char *)buf;
 
-					DWORD json_size = (DWORD)json.size();
+						DWORD json_size = (DWORD)json.size();
 
-					CopyMemory(p, &json_size, sizeof(DWORD));
-					p += sizeof(DWORD);
-					CopyMemory(p, json.c_str(), json_size);
+						CopyMemory(p, &json_size, sizeof(DWORD));
+						p += sizeof(DWORD);
+						CopyMemory(p, json.c_str(), json_size);
 
-					success = TRUE;
+						success = TRUE;
+					}
+					catch (...)
+					{
+
+					}
+
+					UnmapViewOfFile(buf);
 				}
-				catch (...)
-				{
-
+				else {
+					print_debug_message();
 				}
-
-				UnmapViewOfFile(buf);
 			}
-			else {
-				print_debug_message();
-			}
+			/* else: accumulated JSON would exceed the fixed-size shared buffer;
+			   fail gracefully (success stays FALSE) rather than writing past the mapped view */
 		}
 	}
 
@@ -678,7 +686,7 @@ HRESULT CCOM4Dv3::Write(DISPPARAMS* pDispParams, VARIANT* pVarResult)
 
 		Json::Value root = Json::Value(Json::arrayValue);
 
-        Json::ArrayIndex pos = pDispParams->cArgs;
+        Json::ArrayIndex pos = pDispParams->cArgs - 1;
         
 		for (Json::ArrayIndex i = 0; i < pDispParams->cArgs; ++i) {
 		
@@ -1011,7 +1019,7 @@ void regsvr32(PA_ObjectRef status, const wchar_t *lpParameters) {
 			SHELLEXECUTEINFO ShExecInfo;
 			ZeroMemory(&ShExecInfo, sizeof(ShExecInfo));
 
-			HMODULE hplugin = GetModuleHandleW(L"COM4D.4DX");
+			HMODULE hplugin = g_hinstDLL;
 			wchar_t	thisPath[_MAX_PATH] = { 0 };
 			wchar_t	fDrive[_MAX_DRIVE], fDir[_MAX_DIR], fName[_MAX_FNAME], fExt[_MAX_EXT];
 			if (GetModuleFileNameW(hplugin, thisPath, _MAX_PATH)) {
