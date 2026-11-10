@@ -359,9 +359,10 @@ sys.exit(result.returncode)
         execpath = Path(subprocess.check_output([real_git, "--exec-path"], text=True).strip())
         for name, executable in (
             ("python3", sys.executable), ("dirname", shutil.which("dirname")),
-            ("git-upload-pack", execpath / "git-upload-pack"),
-            ("git-receive-pack", execpath / "git-receive-pack"),
+            ("git-upload-pack", shutil.which("git-upload-pack") or execpath / "git-upload-pack"),
+            ("git-receive-pack", shutil.which("git-receive-pack") or execpath / "git-receive-pack"),
         ):
+            self.assertTrue(Path(executable).is_file(), executable)
             (tools / name).symlink_to(executable)
         for kind, target in (("advance", advance), ("rewind", self.ancestor),
                              ("delete", "0" * 40), ("same-result", "same-result")):
