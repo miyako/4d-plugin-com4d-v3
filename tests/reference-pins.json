@@ -1,0 +1,1475 @@
+{
+  "verification": "Git blob SHA-1 over exact raw bytes; fetched at immutable commit pins",
+  "references": [
+    {
+      "repo": "miyako/4d-plugin-PRNG",
+      "commit": "522f62e1e9f388be0f3f226c1d4c39362dad2491",
+      "blobs": [
+        {
+          "path": ".github/scripts/bump-hooks/pre-push",
+          "sha": "43bc8690e9e47c52157a4d46575f30cc648c2a17",
+          "mode": "100755",
+          "size": 778
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "8fc5f968ec629edf96b5413961c3d20c9cd26f25",
+          "mode": "100644",
+          "size": 9476
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "4553d57fcd20ff8b53449cb88c315210fb6276db",
+          "mode": "100644",
+          "size": 9961
+        },
+        {
+          "path": ".github/tests/test_lifecycle.py",
+          "sha": "7516202f7be5c0edaa7f808b431387c69cbc5fd4",
+          "mode": "100644",
+          "size": 48199
+        },
+        {
+          "path": ".github/tests/test_native.py",
+          "sha": "512b66bfc386fbac54f30ce2ac624994106cad57",
+          "mode": "100644",
+          "size": 34743
+        },
+        {
+          "path": ".github/tests/test_release.py",
+          "sha": "c93016b080c2832a4608b5a29406925402982389",
+          "mode": "100644",
+          "size": 18674
+        },
+        {
+          "path": ".github/tests/test_repository_contract.py",
+          "sha": "e7a46061736be363d72dec83f0040729d51beb1b",
+          "mode": "100644",
+          "size": 5180
+        },
+        {
+          "path": ".github/tests/test_source_version.py",
+          "sha": "422b3094d0437c5267315b48ac58544b700faf75",
+          "mode": "100644",
+          "size": 21971
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "0639d92d279c5b9a722c6270404d9957877d7a52",
+          "mode": "100644",
+          "size": 1367
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "ad0d6cea901cf7cf521c352c306716ee6803a473",
+          "mode": "100644",
+          "size": 11795
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-RTF2TEXT",
+      "commit": "4a8c89677515cd5c71c162e0b296e63bee374cdd",
+      "blobs": [
+        {
+          "path": ".github/README.md",
+          "sha": "4a89075eba1aff762e4ac949b43a5ebaee54f181",
+          "mode": "100644",
+          "size": 6316
+        },
+        {
+          "path": ".github/hooks/pre-push",
+          "sha": "e06e50d2b33972ce25ca3611e97b1395062ae81a",
+          "mode": "100755",
+          "size": 76
+        },
+        {
+          "path": ".github/migration-hooks/pre-push",
+          "sha": "f5034535bd991bf41335080143631b1c3a79c43a",
+          "mode": "100755",
+          "size": 1488
+        },
+        {
+          "path": ".github/scripts/bump.py",
+          "sha": "5c8e51af859ef599266640b1dbd39c89d282b838",
+          "mode": "100644",
+          "size": 5665
+        },
+        {
+          "path": ".github/scripts/native.py",
+          "sha": "92f758057cbce3ffebfd5470e082ef60c8ea822d",
+          "mode": "100644",
+          "size": 4255
+        },
+        {
+          "path": ".github/scripts/native.sh",
+          "sha": "cd43318026f409371bcb8e0607cbc9700186581d",
+          "mode": "100644",
+          "size": 4060
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "d9e70426b97cca10a607be026cb398c04c78949d",
+          "mode": "100644",
+          "size": 11155
+        },
+        {
+          "path": ".github/scripts/repository.py",
+          "sha": "981ffebbb9d119379c6b8623e65eacae8c9704b2",
+          "mode": "100644",
+          "size": 3802
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "47b8f6375a962086406a87ea56541925d7159820",
+          "mode": "100644",
+          "size": 14724
+        },
+        {
+          "path": ".github/scripts/verify-windows-deps.ps1",
+          "sha": "59c97f608df8c6d73cdbcc8dff2a132f5fe8bbfe",
+          "mode": "100644",
+          "size": 3403
+        },
+        {
+          "path": ".github/scripts/windows.ps1",
+          "sha": "a117239f95f62ec6516e548f7ad394fae8296e9a",
+          "mode": "100644",
+          "size": 4591
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "21df874245d2a2ef82a334debc26b0033abc85e2",
+          "mode": "100644",
+          "size": 888
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "6c35feba1cd18826b3cd7cf03c3f301688960b7f",
+          "mode": "100644",
+          "size": 4290
+        },
+        {
+          "path": "tests/helper_support.py",
+          "sha": "a380a8488a9a2d9ebce7145a6894159bb903c889",
+          "mode": "100644",
+          "size": 5276
+        },
+        {
+          "path": "tests/reference-pins.json",
+          "sha": "a7c7b45d0a00a1b7c70616167ecdf5f53113440f",
+          "mode": "100644",
+          "size": 3279
+        },
+        {
+          "path": "tests/test_bump.py",
+          "sha": "310d7f33db71be805f71b1bd1b17a4a49cc103bb",
+          "mode": "100644",
+          "size": 19314
+        },
+        {
+          "path": "tests/test_generated.py",
+          "sha": "8d60786e835442e006df3bf9f193b5cece8f873e",
+          "mode": "100644",
+          "size": 2744
+        },
+        {
+          "path": "tests/test_migration_guard.py",
+          "sha": "1d046c1d394514f81bf175372eb8832ce0aab5de",
+          "mode": "100644",
+          "size": 4521
+        },
+        {
+          "path": "tests/test_native.py",
+          "sha": "3aa40ee628c09b5b491b56214b333aa5321a1e9c",
+          "mode": "100644",
+          "size": 8620
+        },
+        {
+          "path": "tests/test_native_workflow.py",
+          "sha": "19565024fb5333d3bf0194e4e13aab77eb4cf3b7",
+          "mode": "100644",
+          "size": 25261
+        },
+        {
+          "path": "tests/test_release.py",
+          "sha": "3c7ff46ff3fb9d2e1b932e1b7c0ea2c89df32492",
+          "mode": "100644",
+          "size": 36124
+        },
+        {
+          "path": "tests/test_repository.py",
+          "sha": "8a5aa6a48eb2a1e07abf962377dde61b0fde006b",
+          "mode": "100644",
+          "size": 1209
+        },
+        {
+          "path": "tests/test_source_version.py",
+          "sha": "4611c9a22490691a562258a7922e60d2c1c5304e",
+          "mode": "100644",
+          "size": 19807
+        },
+        {
+          "path": "tests/test_windows.py",
+          "sha": "6e9c93121e7c470513659e7aa5bb6e2e13fb5251",
+          "mode": "100644",
+          "size": 20134
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-UTI",
+      "commit": "5decf4be07f8297d256dfb559ef9466525fe9045",
+      "blobs": [
+        {
+          "path": ".github/hooks/pre-push",
+          "sha": "e06e50d2b33972ce25ca3611e97b1395062ae81a",
+          "mode": "100755",
+          "size": 76
+        },
+        {
+          "path": ".github/migration-hooks/pre-push",
+          "sha": "8205e854af126cfbd4ce241a67daa306b4278eaf",
+          "mode": "100755",
+          "size": 1483
+        },
+        {
+          "path": ".github/scripts/bump.py",
+          "sha": "5c8e51af859ef599266640b1dbd39c89d282b838",
+          "mode": "100644",
+          "size": 5665
+        },
+        {
+          "path": ".github/scripts/native.py",
+          "sha": "312cdffe942d7913f83031508c76c218b8e1f951",
+          "mode": "100644",
+          "size": 2706
+        },
+        {
+          "path": ".github/scripts/native.sh",
+          "sha": "041a4ccaad981d1c30e462791f63b49850dd0e34",
+          "mode": "100644",
+          "size": 4034
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "6e079461946e3ae6ccfe24f9a6623df1bc9fded7",
+          "mode": "100644",
+          "size": 11006
+        },
+        {
+          "path": ".github/scripts/repository.py",
+          "sha": "3324d9b45ecbd331e0b0474e2a1e7c27d103f723",
+          "mode": "100644",
+          "size": 3393
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "7df4c3f6bec923fa1a4c567f0f1b0c8a393af461",
+          "mode": "100644",
+          "size": 14714
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "c962d54d75462506e513dedcc9e5b4ee495e3deb",
+          "mode": "100644",
+          "size": 883
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "f3cc9c9a05b5c0c4a60cb04adb911e1433c0b6ee",
+          "mode": "100644",
+          "size": 2630
+        },
+        {
+          "path": "tests/helper_support.py",
+          "sha": "1d67ea7d81d81a49238926f0f3acddb7929b215a",
+          "mode": "100644",
+          "size": 5270
+        },
+        {
+          "path": "tests/reference-pins.json",
+          "sha": "fddac686acbc079ddd07768a2f3cdf02e7f4fb96",
+          "mode": "100644",
+          "size": 2900
+        },
+        {
+          "path": "tests/test_bump.py",
+          "sha": "310d7f33db71be805f71b1bd1b17a4a49cc103bb",
+          "mode": "100644",
+          "size": 19314
+        },
+        {
+          "path": "tests/test_generated.py",
+          "sha": "6819eb36f419fe7152e664bd9d0d863fb15c0c12",
+          "mode": "100644",
+          "size": 2408
+        },
+        {
+          "path": "tests/test_migration_guard.py",
+          "sha": "bec27d8421969c38e6a35c29a238a00447b09dfc",
+          "mode": "100644",
+          "size": 4516
+        },
+        {
+          "path": "tests/test_native.py",
+          "sha": "2c2936e77ffae28fa63045c00e5adee8499431ff",
+          "mode": "100644",
+          "size": 6023
+        },
+        {
+          "path": "tests/test_native_workflow.py",
+          "sha": "cc9dd43cde4fc2e74d09c0811830527dad50c4aa",
+          "mode": "100644",
+          "size": 20332
+        },
+        {
+          "path": "tests/test_release.py",
+          "sha": "758edad0d70a3f4f1d2b5b98a7acead00f72cdac",
+          "mode": "100644",
+          "size": 33427
+        },
+        {
+          "path": "tests/test_source_version.py",
+          "sha": "4111c2251ae3a9e24cb71bb328c882bff0b94727",
+          "mode": "100644",
+          "size": 19749
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-common-string-algorithm",
+      "commit": "2606a68201866ec9fcbb38b51462d79215f504ef",
+      "blobs": [
+        {
+          "path": ".github/scripts/bump-hooks/pre-push",
+          "sha": "43bc8690e9e47c52157a4d46575f30cc648c2a17",
+          "mode": "100755",
+          "size": 778
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "5929117d59a72f1b16a96665634c8cd78a1bf3b7",
+          "mode": "100644",
+          "size": 9151
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "4aa9d33a9444be456677f70eb2d8a3c95bd3db21",
+          "mode": "100644",
+          "size": 7041
+        },
+        {
+          "path": ".github/tests/test_lifecycle.py",
+          "sha": "69f16afcc459374bd08866ba7acef9b4973cb89b",
+          "mode": "100644",
+          "size": 41556
+        },
+        {
+          "path": ".github/tests/test_source_version.py",
+          "sha": "0d8f44a7087cde43a8b3f03fda2be1c70082d1c8",
+          "mode": "100644",
+          "size": 19180
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "f0f162a2dfc1af1e9e4892c18b03c086af2321f1",
+          "mode": "100644",
+          "size": 1371
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "3b7198376e5c6f861f7e653a1a52081f711ab119",
+          "mode": "100644",
+          "size": 11233
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-file-information",
+      "commit": "19848973601acfd3a2b5070230fa40cdc7e4edb2",
+      "blobs": [
+        {
+          "path": ".github/scripts/bump-hooks/pre-push",
+          "sha": "43bc8690e9e47c52157a4d46575f30cc648c2a17",
+          "mode": "100755",
+          "size": 778
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "72e375fa1f84bf1adf6629ac15b49be64d89cefb",
+          "mode": "100644",
+          "size": 9449
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "59253d5370db2a5cae598e03376074a7e36abdc5",
+          "mode": "100644",
+          "size": 9283
+        },
+        {
+          "path": ".github/tests/test_lifecycle.py",
+          "sha": "04c7a53fbba7e0588af6a64ca89127d57457d4f8",
+          "mode": "100644",
+          "size": 48308
+        },
+        {
+          "path": ".github/tests/test_native.py",
+          "sha": "dec198e18c7a5c86ae94d6bfbfb2b24787b3fa9b",
+          "mode": "100644",
+          "size": 35145
+        },
+        {
+          "path": ".github/tests/test_release.py",
+          "sha": "cc29b1e08b19833da7c80ff2e3f62d2e49d92c39",
+          "mode": "100644",
+          "size": 18140
+        },
+        {
+          "path": ".github/tests/test_source_version.py",
+          "sha": "fdfa182f6f150c1411b233f3c19636ed55701fd1",
+          "mode": "100644",
+          "size": 19580
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "0639d92d279c5b9a722c6270404d9957877d7a52",
+          "mode": "100644",
+          "size": 1367
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "ecdaa89de63d62595342a95b416d0b40ad57e7e2",
+          "mode": "100644",
+          "size": 14288
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-get-file-description",
+      "commit": "0e6dad397e015c3c7ec61d7dfeb9c60bc6a4a22b",
+      "blobs": [
+        {
+          "path": ".github/scripts/bump-hooks/pre-push",
+          "sha": "43bc8690e9e47c52157a4d46575f30cc648c2a17",
+          "mode": "100755",
+          "size": 778
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "f3ba478c9fcece4ebd49df054fa1d907a55511a2",
+          "mode": "100644",
+          "size": 9741
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "db54417890a29c4be447e25b1526277b3fe2d9c9",
+          "mode": "100644",
+          "size": 10190
+        },
+        {
+          "path": ".github/tests/test_lifecycle.py",
+          "sha": "66970205fad0fcd4a728d9bfa89b9bc369effe85",
+          "mode": "100644",
+          "size": 45465
+        },
+        {
+          "path": ".github/tests/test_native.py",
+          "sha": "954889ff22aef02fce4172da1ce69353d4d37ced",
+          "mode": "100644",
+          "size": 22117
+        },
+        {
+          "path": ".github/tests/test_release.py",
+          "sha": "e06af179151d8f16ac80267790eaa7219b420288",
+          "mode": "100644",
+          "size": 19024
+        },
+        {
+          "path": ".github/tests/test_repository_contract.py",
+          "sha": "331ee92de514d22ad0896fed9a4f1918922373e1",
+          "mode": "100644",
+          "size": 7210
+        },
+        {
+          "path": ".github/tests/test_source_version.py",
+          "sha": "f9bbde05131e4d182ddcfce7826e7b82c6975887",
+          "mode": "100644",
+          "size": 23827
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "0639d92d279c5b9a722c6270404d9957877d7a52",
+          "mode": "100644",
+          "size": 1367
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "1ed106c304956da39a06f6a2a5402813fcbd4dac",
+          "mode": "100644",
+          "size": 7359
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-keychain",
+      "commit": "7aedc6ba4633e53f5055c1b83c68a6dd32d9c85a",
+      "blobs": [
+        {
+          "path": ".github/hooks/pre-push",
+          "sha": "e06e50d2b33972ce25ca3611e97b1395062ae81a",
+          "mode": "100755",
+          "size": 76
+        },
+        {
+          "path": ".github/scripts/bump.py",
+          "sha": "ea931bae04e85284c5a67a5cc9155f1440687ef8",
+          "mode": "100644",
+          "size": 4990
+        },
+        {
+          "path": ".github/scripts/native.py",
+          "sha": "6e06d6e0d17b9f52bb3f64d5127de7f2c3092b6f",
+          "mode": "100644",
+          "size": 1552
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "90e4188724ff8af0ea77fc7e9b2dce2104a71193",
+          "mode": "100644",
+          "size": 10646
+        },
+        {
+          "path": ".github/scripts/repository.py",
+          "sha": "b5d6b48e59b6f864cf952bc46cbc9e3240cf19e3",
+          "mode": "100644",
+          "size": 3244
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "5bfff474df4f99ea4c4eef18094e3e9f8f038c2d",
+          "mode": "100644",
+          "size": 13026
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "65bf4d75de1bd83b72fe884c83b14fc42de9b4f2",
+          "mode": "100644",
+          "size": 1026
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "fc997402fb83312efc7dbd40f49efa7d7e52d811",
+          "mode": "100644",
+          "size": 10715
+        },
+        {
+          "path": "tests/helper_support.py",
+          "sha": "78ceb1db9843c29bb4e301e6ac7d547567b0873f",
+          "mode": "100644",
+          "size": 4001
+        },
+        {
+          "path": "tests/test_bump.py",
+          "sha": "2bf6103ef58d18b3bdfb756f678495e4345c16b8",
+          "mode": "100644",
+          "size": 12180
+        },
+        {
+          "path": "tests/test_native.py",
+          "sha": "d72db98e26883841054fd44116665767bbc2334a",
+          "mode": "100644",
+          "size": 3009
+        },
+        {
+          "path": "tests/test_native_workflow.py",
+          "sha": "8bc24a3a71abc69522bfccef0abebb213de7cc41",
+          "mode": "100644",
+          "size": 23024
+        },
+        {
+          "path": "tests/test_release.py",
+          "sha": "8081ca3dcf37d04cca311b97a3f12a08ee2b4cf1",
+          "mode": "100644",
+          "size": 23269
+        },
+        {
+          "path": "tests/test_source_version.py",
+          "sha": "e1e41e8412e0175c40c2875022f5b559f4db1dee",
+          "mode": "100644",
+          "size": 16087
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-libarchive",
+      "commit": "9547d09522fc422ddd754fb088165b3d1d1d3073",
+      "blobs": [
+        {
+          "path": ".github/README.md",
+          "sha": "3bc4facefeceb84def76bb79c09bbe2150443d8a",
+          "mode": "100644",
+          "size": 3740
+        },
+        {
+          "path": ".github/hooks/pre-push",
+          "sha": "e06e50d2b33972ce25ca3611e97b1395062ae81a",
+          "mode": "100755",
+          "size": 76
+        },
+        {
+          "path": ".github/migration-hooks/pre-push",
+          "sha": "894e2f7a28300529198a78623d511e62a8f52212",
+          "mode": "100755",
+          "size": 1745
+        },
+        {
+          "path": ".github/scripts/bump.py",
+          "sha": "5c8e51af859ef599266640b1dbd39c89d282b838",
+          "mode": "100644",
+          "size": 5665
+        },
+        {
+          "path": ".github/scripts/dependency.py",
+          "sha": "a5e9802924f6e6d99b3119ef83b9c15d0e1b82be",
+          "mode": "100644",
+          "size": 3101
+        },
+        {
+          "path": ".github/scripts/native.py",
+          "sha": "6b9f912c7edfa2e50a1ffe6bb2a819b14d3b4a91",
+          "mode": "100644",
+          "size": 7087
+        },
+        {
+          "path": ".github/scripts/native.sh",
+          "sha": "b9dd0b405ca19f197dbcba3a319c8cab48579333",
+          "mode": "100755",
+          "size": 2704
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "41fa4e72e72cda71c7b3a715755ae0fa6a8c8328",
+          "mode": "100644",
+          "size": 10969
+        },
+        {
+          "path": ".github/scripts/repository.py",
+          "sha": "ba3a0bd1b7831c68a59cbd147bd1501f1c004fc2",
+          "mode": "100644",
+          "size": 4088
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "5ca37dd1be9871c8e4eec0ef6ffdb1bb1ace41aa",
+          "mode": "100644",
+          "size": 656
+        },
+        {
+          "path": ".github/scripts/version_model.py",
+          "sha": "11995073d2ec34acd777d0aa98b6af8ad6727ca7",
+          "mode": "100644",
+          "size": 5351
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "f1353b2e102364661b0d57567c1485ceb7c74a9c",
+          "mode": "100644",
+          "size": 922
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "6a485e8fe099b047b6e5da3d446f0e9916852dba",
+          "mode": "100644",
+          "size": 5393
+        },
+        {
+          "path": ".github/workflows/test.yml",
+          "sha": "2c766623a85f67cd4a04a5c665fc114e2db37ce0",
+          "mode": "100644",
+          "size": 2696
+        },
+        {
+          "path": "tests/helper_support.py",
+          "sha": "cd0175a587a43c43aacc8e1988cca4ad7738a707",
+          "mode": "100644",
+          "size": 6038
+        },
+        {
+          "path": "tests/test_bump.py",
+          "sha": "d3402768d98dd79ebde950387e91d0c93122b7e6",
+          "mode": "100644",
+          "size": 19260
+        },
+        {
+          "path": "tests/test_dependency.py",
+          "sha": "cc352e9aad9aac739fc81498982679c6e034a03f",
+          "mode": "100644",
+          "size": 3665
+        },
+        {
+          "path": "tests/test_generated.py",
+          "sha": "155182fc979294c6ac98645769b3210e10d5fded",
+          "mode": "100644",
+          "size": 2161
+        },
+        {
+          "path": "tests/test_migration_guard.py",
+          "sha": "ee3c37f64b6cc1090be56802c97954c89a16f349",
+          "mode": "100644",
+          "size": 4060
+        },
+        {
+          "path": "tests/test_native.py",
+          "sha": "08f20b40366bcbf967cb8930f381feb1608db053",
+          "mode": "100644",
+          "size": 10894
+        },
+        {
+          "path": "tests/test_release.py",
+          "sha": "48d0bc53d375d1ede4516f7639c554ff3ece868b",
+          "mode": "100644",
+          "size": 50195
+        },
+        {
+          "path": "tests/test_version_model.py",
+          "sha": "274a1ac36c88dbeb9de4e5deb8c7abd5ebbfd553",
+          "mode": "100644",
+          "size": 4539
+        },
+        {
+          "path": "tests/test_workflows.py",
+          "sha": "6f3263a308a9b34ae5ede9b16c78cd0caf529d59",
+          "mode": "100644",
+          "size": 3875
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-maddy",
+      "commit": "e000f17a5ad5085dcd010a9ddde76a4cb2d3119b",
+      "blobs": [
+        {
+          "path": ".github/README.md",
+          "sha": "dfaea958ac0c39ccce9faff6218395d3ba59b09f",
+          "mode": "100644",
+          "size": 8741
+        },
+        {
+          "path": ".github/hooks/pre-push",
+          "sha": "980827b17fca166cde62f382c97144642c09ed30",
+          "mode": "100755",
+          "size": 63
+        },
+        {
+          "path": ".github/scripts/bump.py",
+          "sha": "2454f29fe46d425cfa8c587001822fab295203b0",
+          "mode": "100644",
+          "size": 5263
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "67789a8d2d811370d2011f1d951968dde8b7d2f4",
+          "mode": "100644",
+          "size": 12179
+        },
+        {
+          "path": ".github/scripts/version.py",
+          "sha": "6508efaa049b3953bb8af3146e00ea7d3718eaa9",
+          "mode": "100644",
+          "size": 12100
+        },
+        {
+          "path": ".github/tests/test_bump.py",
+          "sha": "464f5c94978c558c8772077948848496a871cd62",
+          "mode": "100644",
+          "size": 12220
+        },
+        {
+          "path": ".github/tests/test_native.py",
+          "sha": "40018b90181fb97a1eb308f3b916e76d6428a6bd",
+          "mode": "100644",
+          "size": 25826
+        },
+        {
+          "path": ".github/tests/test_release.py",
+          "sha": "d6bc4e2de113a63072cb54553b85509369d2df5f",
+          "mode": "100644",
+          "size": 32795
+        },
+        {
+          "path": ".github/tests/test_version.py",
+          "sha": "05b299146783877fe6465cd01dad668a19f8e56b",
+          "mode": "100644",
+          "size": 14786
+        },
+        {
+          "path": ".github/tests/test_workflows.py",
+          "sha": "f9adf38c7550146722c5003ccce105d75d08a2d2",
+          "mode": "100644",
+          "size": 4460
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "12087b855e5d227a3d09e2edc16c2d34bd6c5600",
+          "mode": "100644",
+          "size": 853
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "086afbeaf3accfb914280a93a64d6a73f58af064",
+          "mode": "100644",
+          "size": 11286
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-native-encoding-detection",
+      "commit": "c42ca565857f674bde5ea6ed3435c87375eda4a7",
+      "blobs": [
+        {
+          "path": ".github/scripts/bump-hooks/pre-push",
+          "sha": "43bc8690e9e47c52157a4d46575f30cc648c2a17",
+          "mode": "100755",
+          "size": 778
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "8e1ad76aa54fbba3eb51ab2ee3f56ee9f8205f2b",
+          "mode": "100644",
+          "size": 9434
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "fb052882556392f98c53c3a61cdb5d7efc1048c7",
+          "mode": "100644",
+          "size": 9150
+        },
+        {
+          "path": ".github/tests/test_lifecycle.py",
+          "sha": "fa6e0b333f195ca55ae8de30e1ec8e2af8836465",
+          "mode": "100644",
+          "size": 48334
+        },
+        {
+          "path": ".github/tests/test_native.py",
+          "sha": "ff8aeb28be700c65c3de2bb613d6dcc2425311cd",
+          "mode": "100644",
+          "size": 29133
+        },
+        {
+          "path": ".github/tests/test_source_version.py",
+          "sha": "f0209694bf7a4133599d2c2edb93acb8fb6c8b36",
+          "mode": "100644",
+          "size": 17660
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "0639d92d279c5b9a722c6270404d9957877d7a52",
+          "mode": "100644",
+          "size": 1367
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "a568b3eb5ffde0a960a9e2abf7d9d1cd69657b27",
+          "mode": "100644",
+          "size": 11503
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-raw-picture-data",
+      "commit": "8144537fdc8dcc3d0c053dfe97aff0a8c0c3a6f9",
+      "blobs": [
+        {
+          "path": ".github/scripts/bump-hooks/pre-push",
+          "sha": "43bc8690e9e47c52157a4d46575f30cc648c2a17",
+          "mode": "100755",
+          "size": 778
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "701bb6e7d88a185058277a6627886f8e7045729f",
+          "mode": "100644",
+          "size": 9488
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "7315142a50a28f3064291b0b261e2e46dc4425f2",
+          "mode": "100644",
+          "size": 9701
+        },
+        {
+          "path": ".github/tests/test_lifecycle.py",
+          "sha": "872d28bf4502422bd1ae27da9a470290c28ed09d",
+          "mode": "100644",
+          "size": 48266
+        },
+        {
+          "path": ".github/tests/test_native.py",
+          "sha": "3218d5d57a1f9e575476bfb217ec06fcc71da8c3",
+          "mode": "100644",
+          "size": 34941
+        },
+        {
+          "path": ".github/tests/test_release.py",
+          "sha": "1e1ee2e5ba7e9f4411f1bb01dab15d3b3376c626",
+          "mode": "100644",
+          "size": 18686
+        },
+        {
+          "path": ".github/tests/test_repository_contract.py",
+          "sha": "8a91c2fc0738c42aa32c0e089f17f22e5eed185d",
+          "mode": "100644",
+          "size": 4401
+        },
+        {
+          "path": ".github/tests/test_source_version.py",
+          "sha": "c352af5ce198ecb3679a0a4a7ec2f95f3c6e4193",
+          "mode": "100644",
+          "size": 21923
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "0639d92d279c5b9a722c6270404d9957877d7a52",
+          "mode": "100644",
+          "size": 1367
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "1d1699bebc4e95926a26a873ce7ccb3721042a28",
+          "mode": "100644",
+          "size": 14299
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-serial",
+      "commit": "32f33a3b3de7dd5201b215ff6050dd3d68e03936",
+      "blobs": [
+        {
+          "path": ".github/README.md",
+          "sha": "1a84e9e6946f9b61c16f50f268d58074af54be48",
+          "mode": "100644",
+          "size": 5043
+        },
+        {
+          "path": ".github/hooks/pre-push",
+          "sha": "e06e50d2b33972ce25ca3611e97b1395062ae81a",
+          "mode": "100755",
+          "size": 76
+        },
+        {
+          "path": ".github/migration-hooks/pre-push",
+          "sha": "c3de6282e5e3b57c9a160d10b950e7278586ffeb",
+          "mode": "100755",
+          "size": 1276
+        },
+        {
+          "path": ".github/scripts/bump.py",
+          "sha": "5c8e51af859ef599266640b1dbd39c89d282b838",
+          "mode": "100644",
+          "size": 5665
+        },
+        {
+          "path": ".github/scripts/native.py",
+          "sha": "8b9b05bdd3c63540e3160f9cc6a6240424a09a84",
+          "mode": "100644",
+          "size": 2735
+        },
+        {
+          "path": ".github/scripts/native.sh",
+          "sha": "0df3700b56ce08358811dd2d02089ed2b1a78782",
+          "mode": "100644",
+          "size": 4003
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "5da3f57eab795439bafd7fdbc93aec6578ee6712",
+          "mode": "100644",
+          "size": 10930
+        },
+        {
+          "path": ".github/scripts/repository.py",
+          "sha": "3324d9b45ecbd331e0b0474e2a1e7c27d103f723",
+          "mode": "100644",
+          "size": 3393
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "25d7a4122b1bc1cce72188534e9abbe1aeb08291",
+          "mode": "100644",
+          "size": 14720
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "d085a4e1b6bdd211d96e2f3356daf16377b67114",
+          "mode": "100644",
+          "size": 886
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "2d8ccbd4c8fee87e70f69ce3e5f47b00eb43be0c",
+          "mode": "100644",
+          "size": 2679
+        },
+        {
+          "path": "tests/helper_support.py",
+          "sha": "74834b1bece8e57fbcca7176d1866e459790544f",
+          "mode": "100644",
+          "size": 5276
+        },
+        {
+          "path": "tests/reference-pins.json",
+          "sha": "8cd37fd05edb3c418d83b345a9313a2fc9284444",
+          "mode": "100644",
+          "size": 22592
+        },
+        {
+          "path": "tests/test_bump.py",
+          "sha": "310d7f33db71be805f71b1bd1b17a4a49cc103bb",
+          "mode": "100644",
+          "size": 19314
+        },
+        {
+          "path": "tests/test_generated.py",
+          "sha": "6a928f97a97d86cf1a1b84f0b69ba263c59f9391",
+          "mode": "100644",
+          "size": 2157
+        },
+        {
+          "path": "tests/test_migration_guard.py",
+          "sha": "d8f592676c0ef028a371f3335d9962994467d6ed",
+          "mode": "100644",
+          "size": 2396
+        },
+        {
+          "path": "tests/test_native.py",
+          "sha": "88ed0e2ee9b115db88aee92e8f32563499d6cce1",
+          "mode": "100644",
+          "size": 6924
+        },
+        {
+          "path": "tests/test_native_workflow.py",
+          "sha": "f12cab596b7733212755b5fcdb5aa7bdba4f277d",
+          "mode": "100644",
+          "size": 20638
+        },
+        {
+          "path": "tests/test_release.py",
+          "sha": "177ab48c3191801b49e2a0201deb7e1a14910485",
+          "mode": "100644",
+          "size": 31120
+        },
+        {
+          "path": "tests/test_source_version.py",
+          "sha": "d2dc042e68f1a0889fb0c76c038cd3d30b092c35",
+          "mode": "100644",
+          "size": 19517
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-shell-execute-v2",
+      "commit": "ee33f21111d9a042101ccc11d68672a7a0067e9c",
+      "blobs": [
+        {
+          "path": ".github/README.md",
+          "sha": "ce0e7c8d82ff81ef78761722a8df6f72959d7260",
+          "mode": "100644",
+          "size": 5283
+        },
+        {
+          "path": ".github/hooks/pre-push",
+          "sha": "e06e50d2b33972ce25ca3611e97b1395062ae81a",
+          "mode": "100755",
+          "size": 76
+        },
+        {
+          "path": ".github/migration-hooks/pre-push",
+          "sha": "8ab7329fa6182fb841d9288fc9d09a77469f6610",
+          "mode": "100755",
+          "size": 1187
+        },
+        {
+          "path": ".github/scripts/bump.py",
+          "sha": "5c8e51af859ef599266640b1dbd39c89d282b838",
+          "mode": "100644",
+          "size": 5665
+        },
+        {
+          "path": ".github/scripts/native.py",
+          "sha": "07ec3885b7cc120d98c830700e696cacc5ae0781",
+          "mode": "100644",
+          "size": 4041
+        },
+        {
+          "path": ".github/scripts/native.sh",
+          "sha": "a239895041996775c090623cbe2c4697c33ba6b8",
+          "mode": "100644",
+          "size": 4071
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "752714b8113bc312404c09ab83b1812bd3c90ae1",
+          "mode": "100644",
+          "size": 10642
+        },
+        {
+          "path": ".github/scripts/repository.py",
+          "sha": "22bb177038b44a76c98b91296d15b5a01d19e989",
+          "mode": "100644",
+          "size": 3431
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "0aa992ddf1e5478505688dc8199e03dd9122b1b1",
+          "mode": "100644",
+          "size": 14734
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "8f82f00660dff1c85a940fe36129016b2d512185",
+          "mode": "100644",
+          "size": 896
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "70aeaf2efc7fd7c76083722e8319db7f48a01220",
+          "mode": "100644",
+          "size": 4163
+        },
+        {
+          "path": "tests/helper_support.py",
+          "sha": "2ee505b2f43b64d1061b4e050363af9013577777",
+          "mode": "100644",
+          "size": 5290
+        },
+        {
+          "path": "tests/reference-pins.json",
+          "sha": "b8960225726af8857b47a2955ce37f1e7afac14e",
+          "mode": "100644",
+          "size": 1468
+        },
+        {
+          "path": "tests/test_bump.py",
+          "sha": "310d7f33db71be805f71b1bd1b17a4a49cc103bb",
+          "mode": "100644",
+          "size": 19314
+        },
+        {
+          "path": "tests/test_generated.py",
+          "sha": "988853597c616986e5f4b0f414a5451fbb552208",
+          "mode": "100644",
+          "size": 2220
+        },
+        {
+          "path": "tests/test_migration_guard.py",
+          "sha": "712cb5221bfd267ca115fbd8aa72dac28524f340",
+          "mode": "100644",
+          "size": 2406
+        },
+        {
+          "path": "tests/test_native.py",
+          "sha": "cb88681391fcfd41ce9241c87e620b79544cd8d2",
+          "mode": "100644",
+          "size": 7716
+        },
+        {
+          "path": "tests/test_native_workflow.py",
+          "sha": "e4a43b1856782253d4e8aa74866b90aa7f6477a9",
+          "mode": "100644",
+          "size": 23734
+        },
+        {
+          "path": "tests/test_release.py",
+          "sha": "62389c71e4049a8aeb4441d12c09c0ea39e3667d",
+          "mode": "100644",
+          "size": 30967
+        },
+        {
+          "path": "tests/test_source_version.py",
+          "sha": "2bc8b297407115e6a6710204819b6eb94f5c9f0b",
+          "mode": "100644",
+          "size": 19594
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-stomp",
+      "commit": "ab9f5e51dba5b8b6ec1a1b70e191082fcb73fb41",
+      "blobs": [
+        {
+          "path": ".github/README.md",
+          "sha": "de40b79f062f87c8996af418537de63460589855",
+          "mode": "100644",
+          "size": 7142
+        },
+        {
+          "path": ".github/hooks/pre-push",
+          "sha": "e06e50d2b33972ce25ca3611e97b1395062ae81a",
+          "mode": "100755",
+          "size": 76
+        },
+        {
+          "path": ".github/migration-hooks/pre-push",
+          "sha": "4ce2d0c7e97f6c5d2bec419206189b23b9dbf8fc",
+          "mode": "100755",
+          "size": 1485
+        },
+        {
+          "path": ".github/scripts/bump.py",
+          "sha": "5c8e51af859ef599266640b1dbd39c89d282b838",
+          "mode": "100644",
+          "size": 5665
+        },
+        {
+          "path": ".github/scripts/native.py",
+          "sha": "cce4c2fdecc9727002dbe3fbd7f0ee7304c79192",
+          "mode": "100644",
+          "size": 5245
+        },
+        {
+          "path": ".github/scripts/native.sh",
+          "sha": "947cd1f42f64da66eee843d0c16970e334b0da12",
+          "mode": "100644",
+          "size": 4325
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "dfc0a92845ec749ffa4217d58ef585799f824548",
+          "mode": "100644",
+          "size": 11302
+        },
+        {
+          "path": ".github/scripts/repository.py",
+          "sha": "e7f92c2a8875337c038a719b601e538c9bc70864",
+          "mode": "100644",
+          "size": 4104
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "3bdc28f6c79cb5885fefd0173dc84c1bf580e063",
+          "mode": "100644",
+          "size": 14718
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "856a79150924f414bf1b96006353951bf9b77b66",
+          "mode": "100644",
+          "size": 885
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "0a33c14e2fb2b3e16d16a4d51b422a546351dfe5",
+          "mode": "100644",
+          "size": 16584
+        },
+        {
+          "path": "tests/helper_support.py",
+          "sha": "5f392e9b68f39eda1d18ed0e10ec3a1fd08bd613",
+          "mode": "100644",
+          "size": 5340
+        },
+        {
+          "path": "tests/reference-pins.json",
+          "sha": "8f68256c034300e5609ccb5a55cb2252cae1ec80",
+          "mode": "100644",
+          "size": 28570
+        },
+        {
+          "path": "tests/test_bump.py",
+          "sha": "310d7f33db71be805f71b1bd1b17a4a49cc103bb",
+          "mode": "100644",
+          "size": 19314
+        },
+        {
+          "path": "tests/test_generated.py",
+          "sha": "5f86c530183bb14c3f4645421ba526fb61ed5625",
+          "mode": "100644",
+          "size": 2353
+        },
+        {
+          "path": "tests/test_migration_guard.py",
+          "sha": "7eaa8523f4858fe221f03980f382d1fa67d56e55",
+          "mode": "100644",
+          "size": 4519
+        },
+        {
+          "path": "tests/test_native.py",
+          "sha": "8716342c98d30a87658c03d9d75476b77b6a25f7",
+          "mode": "100644",
+          "size": 8422
+        },
+        {
+          "path": "tests/test_native_workflow.py",
+          "sha": "ea632c0520e269ce4d323e6202764f597dacfc8e",
+          "mode": "100644",
+          "size": 27060
+        },
+        {
+          "path": "tests/test_release.py",
+          "sha": "b15a566d64b30493a00ce43ba13516139163b71d",
+          "mode": "100644",
+          "size": 47843
+        },
+        {
+          "path": "tests/test_source_version.py",
+          "sha": "d95eb2c321a8eed7f8bce23e631c7c8e930e5e3f",
+          "mode": "100644",
+          "size": 19855
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-window-button",
+      "commit": "3f14facb9aaaaff0e22eeb8e07531163680c3a8a",
+      "blobs": [
+        {
+          "path": ".github/scripts/bump-hooks/pre-push",
+          "sha": "43bc8690e9e47c52157a4d46575f30cc648c2a17",
+          "mode": "100755",
+          "size": 778
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "d203443f76013b12f1fbf8a6e3721bf81b958095",
+          "mode": "100644",
+          "size": 9131
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "27ba9b03a294c3fa02c975821684c1b080e40aaa",
+          "mode": "100644",
+          "size": 7685
+        },
+        {
+          "path": ".github/tests/test_lifecycle.py",
+          "sha": "ccb55d6d59ccd074a14e04d3de1d8ebee0ed71fa",
+          "mode": "100644",
+          "size": 61071
+        },
+        {
+          "path": ".github/tests/test_source_version.py",
+          "sha": "2318f24ca59bbf03cbbb713186a8d420f6bc903e",
+          "mode": "100644",
+          "size": 23684
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "3b4b70a3e0c9a1bbdc5afffa8ca2e5ca6c81214d",
+          "mode": "100644",
+          "size": 1416
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "2602c47aa78df5a2f7b9331436f9e395607853f2",
+          "mode": "100644",
+          "size": 5888
+        }
+      ]
+    },
+    {
+      "repo": "miyako/4d-plugin-window-style",
+      "commit": "2794dbe06717b8344a99fc14991a7a2b5d6ef196",
+      "blobs": [
+        {
+          "path": ".github/hooks/pre-push",
+          "sha": "e06e50d2b33972ce25ca3611e97b1395062ae81a",
+          "mode": "100755",
+          "size": 76
+        },
+        {
+          "path": ".github/scripts/bump.py",
+          "sha": "ea931bae04e85284c5a67a5cc9155f1440687ef8",
+          "mode": "100644",
+          "size": 4990
+        },
+        {
+          "path": ".github/scripts/native.py",
+          "sha": "b1884ece173e50dc8ac95beebbed5d18448515cf",
+          "mode": "100644",
+          "size": 784
+        },
+        {
+          "path": ".github/scripts/native.sh",
+          "sha": "fb31962554e253edc083743cd572b77926826d55",
+          "mode": "100644",
+          "size": 4068
+        },
+        {
+          "path": ".github/scripts/release.py",
+          "sha": "eb4c68cc5143e25ddedf16b2abcd709acbec77c3",
+          "mode": "100644",
+          "size": 10647
+        },
+        {
+          "path": ".github/scripts/repository.py",
+          "sha": "b5d6b48e59b6f864cf952bc46cbc9e3240cf19e3",
+          "mode": "100644",
+          "size": 3244
+        },
+        {
+          "path": ".github/scripts/source_version.py",
+          "sha": "29ae6f892393361e7da496cd9c2462238e8ccaf6",
+          "mode": "100644",
+          "size": 13031
+        },
+        {
+          "path": ".github/scripts/test_native.py",
+          "sha": "ddb297becc24ca092faf6c3436cdbe459cc06f3e",
+          "mode": "100644",
+          "size": 8362
+        },
+        {
+          "path": ".github/scripts/test_workflows.py",
+          "sha": "81a51fe691db84dca15da5c2a9df15e6563e3c21",
+          "mode": "100644",
+          "size": 6205
+        },
+        {
+          "path": ".github/workflows/bump-version.yml",
+          "sha": "7c21712f394f93eac26ce7f55a96528f6670b2b2",
+          "mode": "100644",
+          "size": 892
+        },
+        {
+          "path": ".github/workflows/release.yml",
+          "sha": "6eb108e269dea1cd02b2e22ec6ee36390d07c97e",
+          "mode": "100644",
+          "size": 2907
+        },
+        {
+          "path": "tests/helper_support.py",
+          "sha": "095d7bd18f3c96c8ef328bdb65d89f28051d220b",
+          "mode": "100644",
+          "size": 5104
+        },
+        {
+          "path": "tests/test_bump.py",
+          "sha": "4e962f3d63f93629c7fcd4a7fd987a4555c0e768",
+          "mode": "100644",
+          "size": 13063
+        },
+        {
+          "path": "tests/test_generated.py",
+          "sha": "ddea811d8cda4f2acb8a36f198aaeb34db6a9079",
+          "mode": "100644",
+          "size": 2120
+        },
+        {
+          "path": "tests/test_release.py",
+          "sha": "30c0957257985fefe7119298d55c101ecbb1f0be",
+          "mode": "100644",
+          "size": 30220
+        },
+        {
+          "path": "tests/test_source_version.py",
+          "sha": "5007e99f890323019ede05e3e3dc9df675a70890",
+          "mode": "100644",
+          "size": 18139
+        }
+      ]
+    }
+  ]
+}
